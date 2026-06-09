@@ -1,0 +1,15 @@
+r2_scores = [
+    lr_r2,
+    ridge_r2,
+    tree_r2
+]
+
+plt.figure(figsize=(8,5))
+
+plt.bar(models, r2_scores)
+
+plt.title("R² Score Comparison of Models")
+
+plt.ylabel("R² Score")
+
+plt.show()
