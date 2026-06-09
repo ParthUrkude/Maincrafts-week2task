@@ -1,0 +1,21 @@
+plt.figure(figsize=(10,5))
+
+plt.plot(
+    y_test.values[:50],
+    label="Actual"
+)
+
+plt.plot(
+    tree_pred[:50],
+    label="Predicted"
+)
+
+plt.title("Actual vs Predicted Prices")
+
+plt.xlabel("Sample Number")
+
+plt.ylabel("House Price")
+
+plt.legend()
+
+plt.show()
