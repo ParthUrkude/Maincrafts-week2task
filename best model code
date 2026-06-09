@@ -1,0 +1,14 @@
+best_model = max(
+    {
+        "Linear Regression": lr_r2,
+        "Ridge Regression": ridge_r2,
+        "Decision Tree": tree_r2
+    },
+    key=lambda x: {
+        "Linear Regression": lr_r2,
+        "Ridge Regression": ridge_r2,
+        "Decision Tree": tree_r2
+    }[x]
+)
+
+print("Best Model:", best_model)
