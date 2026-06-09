@@ -1,0 +1,7 @@
+ridge = Ridge(alpha=1.0)
+
+ridge.fit(X_train_scaled, y_train)
+
+ridge_pred = ridge.predict(X_test_scaled)
+
+print("Ridge Regression Trained")
