@@ -1,0 +1,9 @@
+tree = DecisionTreeRegressor(
+    random_state=42
+)
+
+tree.fit(X_train, y_train)
+
+tree_pred = tree.predict(X_test)
+
+print("Decision Tree Trained")
