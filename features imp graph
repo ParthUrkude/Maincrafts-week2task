@@ -1,0 +1,13 @@
+importance = tree.feature_importances_
+
+features = X.columns
+
+plt.figure(figsize=(10,5))
+
+plt.bar(features, importance)
+
+plt.xticks(rotation=90)
+
+plt.title("Feature Importance (Decision Tree)")
+
+plt.show()
