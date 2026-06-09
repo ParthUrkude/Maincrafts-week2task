@@ -1,0 +1,7 @@
+lr = LinearRegression()
+
+lr.fit(X_train_scaled, y_train)
+
+lr_pred = lr.predict(X_test_scaled)
+
+print("Linear Regression Trained")
