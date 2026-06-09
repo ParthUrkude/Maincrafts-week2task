@@ -1,0 +1,21 @@
+models = [
+    "Linear Regression",
+    "Ridge Regression",
+    "Decision Tree"
+]
+
+rmse_scores = [
+    lr_rmse,
+    ridge_rmse,
+    tree_rmse
+]
+
+plt.figure(figsize=(8,5))
+
+plt.bar(models, rmse_scores)
+
+plt.title("RMSE Comparison of Models")
+
+plt.ylabel("RMSE")
+
+plt.show()
